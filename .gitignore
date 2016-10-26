@@ -54,3 +54,9 @@ public/assets/*
 .rvmrc
 .rbenv-version
 .DS_Store
+.idea/.rakeTasks
+.idea/etflex.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
