@@ -61,3 +61,12 @@ public/assets/*
 .idea/vcs.xml
 .idea/workspace.xml
 .idea/etflex5.iml
+.idea/jsLibraryMappings.xml
+.idea/runConfigurations/Development__etflex.xml
+.idea/runConfigurations/Production__etflex.xml
+.idea/runConfigurations/spec__etflex.xml
+.idea/runConfigurations/test__etflex.xml
+bin/bundle
+bin/rails
+bin/rake
+bin/setup

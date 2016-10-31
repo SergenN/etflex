@@ -1,1 +1,2 @@
-ETFlex::Application.config.secret_token = ENV.fetch('RAILS_SECRET_KEY_BASE')
+#ETFlex::Application.config.secret_token = ENV.fetch('RAILS_SECRET_KEY_BASE')
+ETFlex::Application.config.secret_key_base= '3bc968c89ff0ac722a07c5406576c5c81892b7ac833517655701585ecd8142c2af0cd13204d8ad4200c8bba0c43adf75ce6367ea5864d808cc571c68674df640'
