@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-RAILS_VERSION = '~> 4.1.0'
+RAILS_VERSION = '~> 4.2.1'
 
-gem 'rails', '~> 4.1.0'
+gem 'rails', '~> 4.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -20,6 +20,7 @@ gem 'redcarpet'
 gem 'gravtastic'
 
 gem 'rest-client'
+gem 'tzinfo-data'
 
 gem 'devise'
 
@@ -44,8 +45,8 @@ gem 'treetop'
 # using Node since it all happens within the Ruby process; compilation with
 # Node fires up a new Node process for each source file, slowing things down
 # considerably in development.
-gem 'therubyracer',  '>= 0.12'
-gem 'libv8',         '>= 3.16.14.3'
+#gem 'therubyracer',  '>= 0.12'
+#gem 'libv8',         '>= 3.16.14.3'
 
 gem 'sass-rails',    '~> 4.0'
 gem 'coffee-rails',  '>= 3.2.1'
@@ -54,11 +55,10 @@ gem 'eco',           '~> 1.0'
 gem 'uglifier',      '>= 1.0.3'
 
 gem 'animation'
-
-group :production, :staging do
-  gem 'unicorn'
-  gem 'newrelic_rpm'
-end
+#group :production, :staging do
+#  gem 'unicorn'
+#  gem 'newrelic_rpm'
+#end
 
 group :development do
   gem 'better_errors'
@@ -67,10 +67,12 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-shell'
   gem 'rb-fsevent'
-  gem 'growl_notify'
+  gem 'ruby_gntp'
+  #gem 'growl_notify'
 
   # Deploy with Capistrano.
-  gem 'capistrano',          '~> 3.0', require: false
+  gem 'capistrano',          '3.2.1'
+  gem 'web-console',         '~> 2.0'
   gem 'capistrano-rbenv',    '~> 2.0', require: false
   gem 'capistrano-rails',    '~> 1.1', require: false
   gem 'capistrano-bundler',  '~> 1.1', require: false
@@ -79,7 +81,10 @@ end
 
 group :test, :development do
   # gem 'ruby-debug19', :require => 'ruby-debug'
-
+  gem 'byebug'
+  gem 'spring'
+  gem 'pry-rails'
+  gem 'erb2haml'
   # An effective alternative to ruby-debug; call "binding.pry" instead
   # of "debugger"
   gem 'pry', '>= 0.9.7'
@@ -99,3 +104,7 @@ group :test do
   gem 'capybara', '~> 2.1.0'
   gem 'poltergeist'
 end
+=begin
+#gem install bcrypt --platform=ruby
+#gem 'bcrypt-ruby', '3.1.11', :require => 'bcrypt'
+=end
