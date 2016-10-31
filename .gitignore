@@ -54,3 +54,8 @@ public/assets/*
 .rvmrc
 .ruby-version
 .DS_Store
+.idea/.rakeTasks
+.idea/etflex5.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
